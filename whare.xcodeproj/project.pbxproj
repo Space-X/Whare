@@ -24,6 +24,14 @@
 		623A98981D2B8DA6007A0D41 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623A98971D2B8DA6007A0D41 /* MessageViewController.swift */; };
 		623A989A1D2BA540007A0D41 /* RoomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623A98991D2BA540007A0D41 /* RoomCell.swift */; };
 		623A989C1D2BA685007A0D41 /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623A989B1D2BA685007A0D41 /* RoomViewController.swift */; };
+		6248B6361D2CFC7F009D5D7F /* LWFaceDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6248B6351D2CFC7F009D5D7F /* LWFaceDetector.mm */; };
+		6248B63F1D2CFCD9009D5D7F /* UIImage+OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6248B63A1D2CFCD9009D5D7F /* UIImage+OpenCV.mm */; };
+		6248B6401D2CFCD9009D5D7F /* haarcascade_eye_tree_eyeglasses.xml in Resources */ = {isa = PBXBuildFile; fileRef = 6248B63B1D2CFCD9009D5D7F /* haarcascade_eye_tree_eyeglasses.xml */; };
+		6248B6411D2CFCD9009D5D7F /* haarcascade_frontalface_alt2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 6248B63C1D2CFCD9009D5D7F /* haarcascade_frontalface_alt2.xml */; };
+		6248B6421D2CFCD9009D5D7F /* liblibjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6248B63D1D2CFCD9009D5D7F /* liblibjpeg.a */; };
+		6248B6431D2CFCD9009D5D7F /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6248B63E1D2CFCD9009D5D7F /* opencv2.framework */; };
+		6248B6451D2CFDFE009D5D7F /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6248B6441D2CFDFE009D5D7F /* AssetsLibrary.framework */; };
+		6248B6471D2CFE9D009D5D7F /* FaceRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6248B6461D2CFE9D009D5D7F /* FaceRecordViewController.swift */; };
 		629228151D29F1CF0082F56F /* XmppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629228141D29F1CF0082F56F /* XmppManager.swift */; };
 		6292298B1D29F20D0082F56F /* XMPPAnonymousAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 6292281A1D29F20C0082F56F /* XMPPAnonymousAuthentication.m */; };
 		6292298C1D29F20D0082F56F /* XMPPDeprecatedDigestAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 6292281D1D29F20C0082F56F /* XMPPDeprecatedDigestAuthentication.m */; };
@@ -219,6 +227,16 @@
 		623A98971D2B8DA6007A0D41 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		623A98991D2BA540007A0D41 /* RoomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomCell.swift; sourceTree = "<group>"; };
 		623A989B1D2BA685007A0D41 /* RoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
+		6248B6341D2CFC7F009D5D7F /* LWFaceDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWFaceDetector.h; sourceTree = "<group>"; };
+		6248B6351D2CFC7F009D5D7F /* LWFaceDetector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LWFaceDetector.mm; sourceTree = "<group>"; };
+		6248B6391D2CFCD9009D5D7F /* UIImage+OpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+OpenCV.h"; sourceTree = "<group>"; };
+		6248B63A1D2CFCD9009D5D7F /* UIImage+OpenCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+OpenCV.mm"; sourceTree = "<group>"; };
+		6248B63B1D2CFCD9009D5D7F /* haarcascade_eye_tree_eyeglasses.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_eye_tree_eyeglasses.xml; sourceTree = "<group>"; };
+		6248B63C1D2CFCD9009D5D7F /* haarcascade_frontalface_alt2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt2.xml; sourceTree = "<group>"; };
+		6248B63D1D2CFCD9009D5D7F /* liblibjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblibjpeg.a; sourceTree = "<group>"; };
+		6248B63E1D2CFCD9009D5D7F /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		6248B6441D2CFDFE009D5D7F /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		6248B6461D2CFE9D009D5D7F /* FaceRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceRecordViewController.swift; sourceTree = "<group>"; };
 		629228141D29F1CF0082F56F /* XmppManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XmppManager.swift; sourceTree = "<group>"; };
 		629228191D29F20C0082F56F /* XMPPAnonymousAuthentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMPPAnonymousAuthentication.h; sourceTree = "<group>"; };
 		6292281A1D29F20C0082F56F /* XMPPAnonymousAuthentication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMPPAnonymousAuthentication.m; sourceTree = "<group>"; };
@@ -551,7 +569,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6248B6451D2CFDFE009D5D7F /* AssetsLibrary.framework in Frameworks */,
+				6248B6431D2CFCD9009D5D7F /* opencv2.framework in Frameworks */,
 				62922A1C1D29F33E0082F56F /* libresolv.tbd in Frameworks */,
+				6248B6421D2CFCD9009D5D7F /* liblibjpeg.a in Frameworks */,
 				62922A1A1D29F2A40082F56F /* libxml2.tbd in Frameworks */,
 				723FD0973F4F87AF4C71AC3C /* Pods_whare.framework in Frameworks */,
 				62922A181D29F20D0082F56F /* libidn.a in Frameworks */,
@@ -582,6 +603,7 @@
 		62370FB81D24AAAD0074A5BC /* whare */ = {
 			isa = PBXGroup;
 			children = (
+				6248B6331D2CFC5A009D5D7F /* FaceRecord */,
 				629228131D29F0A10082F56F /* Chat */,
 				629228121D29F04E0082F56F /* Video */,
 				62370FCF1D24B7710074A5BC /* 3rdLibs */,
@@ -611,6 +633,38 @@
 				62370FD01D24B7870074A5BC /* SwiftyJSON.swift */,
 			);
 			name = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		6248B6331D2CFC5A009D5D7F /* FaceRecord */ = {
+			isa = PBXGroup;
+			children = (
+				6248B6371D2CFCD9009D5D7F /* OpenCV */,
+				6248B6341D2CFC7F009D5D7F /* LWFaceDetector.h */,
+				6248B6351D2CFC7F009D5D7F /* LWFaceDetector.mm */,
+				6248B6461D2CFE9D009D5D7F /* FaceRecordViewController.swift */,
+			);
+			name = FaceRecord;
+			sourceTree = "<group>";
+		};
+		6248B6371D2CFCD9009D5D7F /* OpenCV */ = {
+			isa = PBXGroup;
+			children = (
+				6248B6381D2CFCD9009D5D7F /* categories */,
+				6248B63B1D2CFCD9009D5D7F /* haarcascade_eye_tree_eyeglasses.xml */,
+				6248B63C1D2CFCD9009D5D7F /* haarcascade_frontalface_alt2.xml */,
+				6248B63D1D2CFCD9009D5D7F /* liblibjpeg.a */,
+				6248B63E1D2CFCD9009D5D7F /* opencv2.framework */,
+			);
+			path = OpenCV;
+			sourceTree = "<group>";
+		};
+		6248B6381D2CFCD9009D5D7F /* categories */ = {
+			isa = PBXGroup;
+			children = (
+				6248B6391D2CFCD9009D5D7F /* UIImage+OpenCV.h */,
+				6248B63A1D2CFCD9009D5D7F /* UIImage+OpenCV.mm */,
+			);
+			path = categories;
 			sourceTree = "<group>";
 		};
 		629228111D29F02A0082F56F /* RegisterLogin */ = {
@@ -1578,6 +1632,7 @@
 		FA0036F039A47197E56DD545 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6248B6441D2CFDFE009D5D7F /* AssetsLibrary.framework */,
 				62922A1B1D29F33E0082F56F /* libresolv.tbd */,
 				62922A191D29F2A40082F56F /* libxml2.tbd */,
 				7E5A28A787D9D9CB784E5EF6 /* Pods_whare.framework */,
@@ -1671,8 +1726,10 @@
 				62922A3F1D2A09400082F56F /* p_16.png in Resources */,
 				62922A441D2A09400082F56F /* p_20.png in Resources */,
 				62370FBF1D24AAAD0074A5BC /* Main.storyboard in Resources */,
+				6248B6411D2CFCD9009D5D7F /* haarcascade_frontalface_alt2.xml in Resources */,
 				62922A121D29F20D0082F56F /* README.txt in Resources */,
 				62922A3B1D2A09400082F56F /* p_12.png in Resources */,
+				6248B6401D2CFCD9009D5D7F /* haarcascade_eye_tree_eyeglasses.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1732,6 +1789,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				629229AA1D29F20D0082F56F /* XMPPRosterCoreDataStorage.m in Sources */,
+				6248B6361D2CFC7F009D5D7F /* LWFaceDetector.mm in Sources */,
 				629229941D29F20D0082F56F /* NSNumber+XMPP.m in Sources */,
 				6292299C1D29F20D0082F56F /* XMPPParser.m in Sources */,
 				629229C71D29F20D0082F56F /* XMPPvCardCoreDataStorage.m in Sources */,
@@ -1864,6 +1922,7 @@
 				629229AB1D29F20D0082F56F /* XMPPUserCoreDataStorageObject.m in Sources */,
 				6292298E1D29F20D0082F56F /* XMPPDigestMD5Authentication.m in Sources */,
 				629229B31D29F20D0082F56F /* XMPPJabberRPCModule.m in Sources */,
+				6248B6471D2CFE9D009D5D7F /* FaceRecordViewController.swift in Sources */,
 				629229931D29F20D0082F56F /* NSData+XMPP.m in Sources */,
 				629229F21D29F20D0082F56F /* XMPPStreamManagementStanzas.m in Sources */,
 				623A989C1D2BA685007A0D41 /* RoomViewController.swift in Sources */,
@@ -1887,6 +1946,7 @@
 				62922A151D29F20D0082F56F /* DDXMLElement.m in Sources */,
 				629229C51D29F20D0082F56F /* XMPPvCard.xcdatamodeld in Sources */,
 				6292299D1D29F20D0082F56F /* XMPPPresence.m in Sources */,
+				6248B63F1D2CFCD9009D5D7F /* UIImage+OpenCV.mm in Sources */,
 				629229B41D29F20D0082F56F /* XMPPIQ+LastActivity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2001,9 +2061,11 @@
 			baseConfigurationReference = 4C168E36B2D10EF349305D59 /* Pods-whare.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/whare",
+					"$(PROJECT_DIR)/whare/OpenCV",
 				);
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = whare/Info.plist;
@@ -2011,6 +2073,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/whare/XMPPFramework/Vendor/libidn",
+					"$(PROJECT_DIR)/whare/OpenCV",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.laowen.whare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2023,9 +2086,11 @@
 			baseConfigurationReference = 744F139B5E37506FDDEDCA05 /* Pods-whare.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/whare",
+					"$(PROJECT_DIR)/whare/OpenCV",
 				);
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = whare/Info.plist;
@@ -2033,6 +2098,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/whare/XMPPFramework/Vendor/libidn",
+					"$(PROJECT_DIR)/whare/OpenCV",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.laowen.whare;
 				PRODUCT_NAME = "$(TARGET_NAME)";

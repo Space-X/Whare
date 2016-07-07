@@ -23,4 +23,7 @@
 #import "XMPPRoom.h"
 #import "XMPPJID.h"
 
+//人脸识别
+#import "LWFaceDetector.h"
+
 #endif /* ObjcSwiftBridge_h */

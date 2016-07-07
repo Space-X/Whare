@@ -32,6 +32,7 @@
 		6248B6431D2CFCD9009D5D7F /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6248B63E1D2CFCD9009D5D7F /* opencv2.framework */; };
 		6248B6451D2CFDFE009D5D7F /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6248B6441D2CFDFE009D5D7F /* AssetsLibrary.framework */; };
 		6248B6471D2CFE9D009D5D7F /* FaceRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6248B6461D2CFE9D009D5D7F /* FaceRecordViewController.swift */; };
+		6248B6491D2E29D0009D5D7F /* FaceRecordConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6248B6481D2E29D0009D5D7F /* FaceRecordConfirmViewController.swift */; };
 		629228151D29F1CF0082F56F /* XmppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629228141D29F1CF0082F56F /* XmppManager.swift */; };
 		6292298B1D29F20D0082F56F /* XMPPAnonymousAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 6292281A1D29F20C0082F56F /* XMPPAnonymousAuthentication.m */; };
 		6292298C1D29F20D0082F56F /* XMPPDeprecatedDigestAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 6292281D1D29F20C0082F56F /* XMPPDeprecatedDigestAuthentication.m */; };
@@ -237,6 +238,7 @@
 		6248B63E1D2CFCD9009D5D7F /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		6248B6441D2CFDFE009D5D7F /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		6248B6461D2CFE9D009D5D7F /* FaceRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceRecordViewController.swift; sourceTree = "<group>"; };
+		6248B6481D2E29D0009D5D7F /* FaceRecordConfirmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceRecordConfirmViewController.swift; sourceTree = "<group>"; };
 		629228141D29F1CF0082F56F /* XmppManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XmppManager.swift; sourceTree = "<group>"; };
 		629228191D29F20C0082F56F /* XMPPAnonymousAuthentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMPPAnonymousAuthentication.h; sourceTree = "<group>"; };
 		6292281A1D29F20C0082F56F /* XMPPAnonymousAuthentication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMPPAnonymousAuthentication.m; sourceTree = "<group>"; };
@@ -642,6 +644,7 @@
 				6248B6341D2CFC7F009D5D7F /* LWFaceDetector.h */,
 				6248B6351D2CFC7F009D5D7F /* LWFaceDetector.mm */,
 				6248B6461D2CFE9D009D5D7F /* FaceRecordViewController.swift */,
+				6248B6481D2E29D0009D5D7F /* FaceRecordConfirmViewController.swift */,
 			);
 			name = FaceRecord;
 			sourceTree = "<group>";
@@ -1804,6 +1807,7 @@
 				629229F11D29F20D0082F56F /* XMPPStreamManagementMemoryStorage.m in Sources */,
 				629229D91D29F20D0082F56F /* XMPPRegistration.m in Sources */,
 				6292299E1D29F20D0082F56F /* XMPPStream.m in Sources */,
+				6248B6491D2E29D0009D5D7F /* FaceRecordConfirmViewController.swift in Sources */,
 				629229EC1D29F20D0082F56F /* XMPPMessage+XEP_0172.m in Sources */,
 				629229D11D29F20D0082F56F /* XMPPvCardTempTel.m in Sources */,
 				629229901D29F20D0082F56F /* XMPPSCRAMSHA1Authentication.m in Sources */,

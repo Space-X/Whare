@@ -24,7 +24,7 @@ class FaceRecordViewController: UIViewController, LWFaceDetectorDelegate, FaceRe
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        if NSUserDefaults.standardUserDefaults().boolForKey("faceRecorded") == true {//TODO:如果不写==true意思完全一样吗
+        if NSUserDefaults.standardUserDefaults().boolForKey("faceRecorded"){
             let alert = UIAlertController(title: "不能录脸", message: "您已经录过脸了，如果要重新录入请先到“我的”页面清除录脸结果", preferredStyle: .Alert)
             let actionConfirm = UIAlertAction(title: "确认", style: .Default, handler: { (action) in
                 self.navigationController?.popViewControllerAnimated(true)
@@ -57,6 +57,7 @@ class FaceRecordViewController: UIViewController, LWFaceDetectorDelegate, FaceRe
     
     //本次人脸录入结果保留
     func faceRecordConfirm(sender: FaceRecordConfirmViewController) {
+        faceDetector?.recordFace()//保存录入结果
         validRecordCount += 1
         recordTipMessage.text = "您需要录脸\(requiredRecordCount), 这是第\(validRecordCount+1)次"
         if validRecordCount >= requiredRecordCount {//录脸完成

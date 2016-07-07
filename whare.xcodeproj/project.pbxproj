@@ -33,6 +33,7 @@
 		6248B6451D2CFDFE009D5D7F /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6248B6441D2CFDFE009D5D7F /* AssetsLibrary.framework */; };
 		6248B6471D2CFE9D009D5D7F /* FaceRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6248B6461D2CFE9D009D5D7F /* FaceRecordViewController.swift */; };
 		6248B6491D2E29D0009D5D7F /* FaceRecordConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6248B6481D2E29D0009D5D7F /* FaceRecordConfirmViewController.swift */; };
+		6248B64C1D2E4696009D5D7F /* AttendanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6248B64B1D2E4696009D5D7F /* AttendanceViewController.swift */; };
 		629228151D29F1CF0082F56F /* XmppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629228141D29F1CF0082F56F /* XmppManager.swift */; };
 		6292298B1D29F20D0082F56F /* XMPPAnonymousAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 6292281A1D29F20C0082F56F /* XMPPAnonymousAuthentication.m */; };
 		6292298C1D29F20D0082F56F /* XMPPDeprecatedDigestAuthentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 6292281D1D29F20C0082F56F /* XMPPDeprecatedDigestAuthentication.m */; };
@@ -239,6 +240,7 @@
 		6248B6441D2CFDFE009D5D7F /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		6248B6461D2CFE9D009D5D7F /* FaceRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceRecordViewController.swift; sourceTree = "<group>"; };
 		6248B6481D2E29D0009D5D7F /* FaceRecordConfirmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceRecordConfirmViewController.swift; sourceTree = "<group>"; };
+		6248B64B1D2E4696009D5D7F /* AttendanceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendanceViewController.swift; sourceTree = "<group>"; };
 		629228141D29F1CF0082F56F /* XmppManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XmppManager.swift; sourceTree = "<group>"; };
 		629228191D29F20C0082F56F /* XMPPAnonymousAuthentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMPPAnonymousAuthentication.h; sourceTree = "<group>"; };
 		6292281A1D29F20C0082F56F /* XMPPAnonymousAuthentication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMPPAnonymousAuthentication.m; sourceTree = "<group>"; };
@@ -605,6 +607,7 @@
 		62370FB81D24AAAD0074A5BC /* whare */ = {
 			isa = PBXGroup;
 			children = (
+				6248B64A1D2E4500009D5D7F /* Attendance */,
 				6248B6331D2CFC5A009D5D7F /* FaceRecord */,
 				629228131D29F0A10082F56F /* Chat */,
 				629228121D29F04E0082F56F /* Video */,
@@ -668,6 +671,14 @@
 				6248B63A1D2CFCD9009D5D7F /* UIImage+OpenCV.mm */,
 			);
 			path = categories;
+			sourceTree = "<group>";
+		};
+		6248B64A1D2E4500009D5D7F /* Attendance */ = {
+			isa = PBXGroup;
+			children = (
+				6248B64B1D2E4696009D5D7F /* AttendanceViewController.swift */,
+			);
+			name = Attendance;
 			sourceTree = "<group>";
 		};
 		629228111D29F02A0082F56F /* RegisterLogin */ = {
@@ -1814,6 +1825,7 @@
 				629229CE1D29F20D0082F56F /* XMPPvCardTempEmail.m in Sources */,
 				629229C21D29F20D0082F56F /* XMPPMessage+XEP0045.m in Sources */,
 				62922A531D2A4F750082F56F /* ChatCell.swift in Sources */,
+				6248B64C1D2E4696009D5D7F /* AttendanceViewController.swift in Sources */,
 				629229D21D29F20D0082F56F /* NSXMLElement+XEP_0059.m in Sources */,
 				6292299A1D29F20D0082F56F /* XMPPMessage.m in Sources */,
 				62370FCC1D24B0E30074A5BC /* LoginViewController.swift in Sources */,
